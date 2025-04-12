@@ -93,3 +93,10 @@ li{
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
+.hero-image {
+    width: 50%;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
