@@ -39,6 +39,7 @@ li{
     --white-color: #fff;
     --black-color: #000;
     --para-color: #504e4d
+    
 }
 .container{
     max-width: 100%;
@@ -56,11 +57,39 @@ li{
     /* box-shadow: rgba(0,0,0,0.5) 0px 6px 24px 0px, rgba(0,0,0,0.08) 0px 0px 0px 1px; */
     /* row-gap: 100px; */
 }
-.container .navbar ul{
+.container .navbar ul {
     display: flex;
     gap: 3.1rem;
     flex-direction: row;
     font-size: 1.6rem;
     padding-top: 20px;
-    font-weight: bold;
+}
+
+.container .navbar ul li a {
+    color: var(--header-color);
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+.container .navbar ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.2rem solid var(--info-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+}
+.container .navbar ul li a::after {
+    width: 0%;  /* Start with width 0 */
+}
+
+.container .navbar ul li a:hover::after {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
 }
