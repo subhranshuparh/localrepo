@@ -22,6 +22,25 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
+    animation: skychange 10s ease-in-out infinite;;
+}
+@keyframes skychange {
+    0% {
+        background-color: #ffbb5c;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: #000000;
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: #ffbb5c;
+    }
 }
 
 .sun {
@@ -30,6 +49,7 @@ body {
     background-color: #e25e3e;
     border-radius: 50%;
     position: relative;
+    overflow: hidden;
 }
 
 .sun::after {
