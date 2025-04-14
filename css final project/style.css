@@ -495,20 +495,55 @@ main{
     border-radius: 10px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
 }
-.contact-content .fa-solid {
-    padding: 0.8rem;
-    margin-right: 1rem;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border-radius: 50%;
-    font-size: 1.6rem;
+.contact-content.fa-solid{
+    padding: 0;
+}
+footer {
+    background:#040d12;
+    color: #f8f9fa;
+    padding: 5rem 0;
+    margin-top: 5rem;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+footer *{
+    color: #f8f9fa;
+}
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
     transition: all 0.3s ease;
 }
-
-.contact-content .fa-solid:hover {
-    transform: scale(1.1);
-    background-color: #0f0ff8;
-    box-shadow: 0 0 15px rgba(13, 110, 253, 0.3);
+footer .social-footer--icons .fa-discord{
+    color:#027ffc;
 }
+footer .social-footer--icons .fa-github{
+    color:#027ffc;
+}
+footer .social-footer--icons .fa-instagram{
+    color:#027ffc;
+}
+.footer-1--div .footer-subheading{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color:whitesmoke;
+}
+/* .footer-1--div .fa-discord{
+    padding: 2rem 0;
+    width: 5rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* display: grid;
+    place-items: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; 
+} */
 
 /***** End contact home section *****/
